@@ -1,0 +1,5 @@
+Clean up the old results
+$ rm -rf cypress/reports/
+
+Run the cypress application with required spec file.
+$ cypress run –spec \”cypress/integration/**/*.spec.ts\” // mention your spec file

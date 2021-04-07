@@ -1,0 +1,10 @@
+{
+    "fixturesFolder": "cypress/fixtures",
+    "integrationFolder": "cypress/test",
+    "pluginsFile": "cypress/plugins/index.js",
+    "screenshotsFolder": "cypress/screenshots",
+    "videosFolder": "cypress/videos",
+    "baseUrl": "https://www.yr.no/nb"
+  }
+
+  
