@@ -4,7 +4,8 @@
     "pluginsFile": "cypress/plugins/index.js",
     "screenshotsFolder": "cypress/screenshots",
     "videosFolder": "cypress/videos",
-    "baseUrl": "https://www.yr.no/nb"
+    "baseUrl": "https://schedule-apitest.azurewebsites.net"
+  
 
   }
 
