@@ -25,3 +25,11 @@ Cypress.Commands.add('getBySel', (selector, ...args) => {
     });
     
 });
+
+Cypress.Commands.add("loginByApi", (username, password = Cypress.env("defaultPassword")) => {
+  return cy.request("POST", `${Cypress.env("apiUrl")}/login`, {
+    username,
+    password,
+  });
+  
+});
