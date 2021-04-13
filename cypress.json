@@ -5,6 +5,7 @@
     "screenshotsFolder": "cypress/screenshots",
     "videosFolder": "cypress/videos",
     "baseUrl": "https://www.yr.no/nb"
+
   }
 
   
