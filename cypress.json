@@ -1,15 +1,16 @@
 {
-    "fixturesFolder": "cypress/fixtures",
+  
+   "projectId": "vu15nb",
+   "fixturesFolder": "cypress/fixtures",
     "integrationFolder": "cypress/tests",
     "pluginsFile": "cypress/plugins/index.js",
     "screenshotsFolder": "cypress/screenshots",
     "videosFolder": "cypress/videos",
     "env": {
-      "api_server": "https://schedule-apitest.azurewebsites.net"
+      "apiUrl": "https://schedule-apitest.azurewebsites.net"
     },
     "baseUrl": "https://schedule-apitest.azurewebsites.net"
     
-  
 
   }
 

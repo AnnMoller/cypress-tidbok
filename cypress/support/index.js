@@ -18,3 +18,15 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+/*
+const pg = require("pg");
+const pool = /* initialize your database connection */;
+//const pool = mysql.createPool(config) 
+
+module.exports = (on) => {
+    on("task", {
+        querydb ({ sql, values }) {                
+            return pool.query(statement);
+        }
+    });
+}

@@ -1,3 +1,4 @@
+//const f = name => '[placeholder="'
 Cypress.Commands.add('getBySel', (selector, ...args) => {
     return cy.get(`[data-test=${selector}]`, ...args)
   });
@@ -7,6 +8,10 @@ Cypress.Commands.add('getBySel', (selector, ...args) => {
   });
 
   Cypress.Commands.add('clickLink', (label) => {
+    cy.get('a').contains(label).click()
+  })
+
+  Cypress.Commands.add('centerForm', (label) => {
     cy.get('a').contains(label).click()
   })
 
@@ -45,5 +50,17 @@ Cypress.Commands.add('createUser', (user) => {
       headers: { Authorization: 'Bearer ' + resp.body.token },
       body: user,
     })
+  })
+})
+
+Cypress.Commands.add('createClinic', (clinic) => {
+  cy.request({
+    method: 'POST',
+    url: 'https://localhost:5006/Clinics',
+    body: {
+      hsa_id: '3',
+      name:clinic,
+      phone: '1122'
+    }
   })
 })

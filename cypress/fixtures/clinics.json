@@ -10,3 +10,12 @@
     "phone": "string"
   }
   
+
+  {
+    "hsa_id": "1",
+    "name": "Ann",
+    "address": [
+      "Hbg"
+    ],
+    "phone": "042-131313"
+  }
