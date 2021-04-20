@@ -7,11 +7,11 @@
     "screenshotsFolder": "cypress/screenshots",
     "videosFolder": "cypress/videos",
     "env": {
-      "apiUrl": "https://schedule-apitest.azurewebsites.net"
+      "localApiUrl": "https://localhost:5006",
+      "azureApiUrl": "https://schedule-apitest.azurewebsites.net"
     },
     "baseUrl": "https://schedule-apitest.azurewebsites.net"
     
-
   }
 
   
