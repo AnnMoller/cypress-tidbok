@@ -1,1 +1,3 @@
-/cypress/tests/exapmles
+node_modules
+cypress/tests/exapmles
+package-lock.json

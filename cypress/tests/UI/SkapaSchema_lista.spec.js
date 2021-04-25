@@ -1,6 +1,6 @@
 describe('Skapa schema', () => {
     it("Skapa ett enkelt scema - lista", () => {
-        cy.visit('http://localhost:3000');
+        cy.visit(`${Cypress.env("localBaseUrl")}`);
         cy.contains('Nytt schema').click();
         cy.get('h1')               
         .should('contain', 'Skapa schemaintervall')

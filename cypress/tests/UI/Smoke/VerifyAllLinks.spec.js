@@ -1,7 +1,7 @@
 describe('Smoke', () => {
-    it("Verify menues", () => {
+    it("Verify links and labels", () => {
        // cy.visit('https://schedule-frontendtest.azurewebsites.net');
-        cy.visit(`${Cypress.env("localApiUrl")}`);
+        cy.visit(`${Cypress.env("localBaseUrl")}`);
        
         cy.contains('Nytt schema').click();
         cy.get('h1')               
@@ -10,10 +10,6 @@ describe('Smoke', () => {
         cy.contains('Lista möten').click();
         cy.get('h1')               
         .should('contain', 'Bokningslista');
-
-        cy.contains('Sök invånare').click();
-        cy.get('h1')               
-        .should('contain', 'Sök invånare');
 
         cy.contains('Lista invånare').click();
         cy.get('h1')               

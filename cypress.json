@@ -6,11 +6,22 @@
     "pluginsFile": "cypress/plugins/index.js",
     "screenshotsFolder": "cypress/screenshots",
     "videosFolder": "cypress/videos",
-    "env": {
-      "localApiUrl": "https://localhost:5006",
-      "azureApiUrl": "https://schedule-apitest.azurewebsites.net"
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "results/cypress-and-azure-devops-[hash].xml",
+        "toConsole": true,
+        "html": false
     },
-    "baseUrl": "https://schedule-apitest.azurewebsites.net"
+    "defaultCommandTimeout": 8000,
+    "env": {
+      "localApiUrl": "localhost:5000",
+      "azureApiUrl": "https://schedule-apitest.azurewebsites.net",
+      "apiUrl": "localhost:5000",
+      "localBaseUrl": "localhost",
+      "azureBaseUrl": "https://schedule-frontendtest.azurewebsites.net/"
+     
+    },
+    "baseUrl": "https://schedule-frontendtest.azurewebsites.net/"
     
   }
 

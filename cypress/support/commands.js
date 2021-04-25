@@ -1,4 +1,5 @@
-//const f = name => '[placeholder="'
+require('@4tw/cypress-drag-drop')
+
 Cypress.Commands.add('getBySel', (selector, ...args) => {
     return cy.get(`[data-test=${selector}]`, ...args)
   });
